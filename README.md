@@ -1,4 +1,5 @@
 LenguageGo
+
 Welcome to Language Go
 
 At Language Go, we are dedicated to bridging the gap between your passion for languages and linguistic fluency. Our mission is to provide an exceptional and transformative educational experience for all our students.
