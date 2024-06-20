@@ -9,15 +9,30 @@
 <body>
     <header id="navbar">
         <picture>
-            <a href=""><img src="assets/IMG/Logo.webp" alt="Logo"> </a>
+            <img src="assets/IMG/Logo.webp" alt="Logo">
         </picture>
-        <nav>
-            <a href="#" class="active">Quienes Somos</a>
-            <a href="#">Cursos</a>
-            <a href="#">Ingles Profesional</a>
-            <a href="#">Examenes Internacionales</a>
+        <nav id="desktop_nav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="#about">Quienes Somos</a>
+            <a href="#class">Cursos</a>
             <a href="#">Inscripción</a>
-        </nav>
+            <a href="#">Contactanos</a>
+          </nav>        
+        <form id="mobile_nav">
+          <label for="btn-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify">
+              <line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/>
+            </svg>
+          </label>
+          <input type="checkbox" id="btn-nav" />
+          <nav>
+            <a href="index.html">HOME</a>
+            <a href="#about">Quienes Somos</a>
+            <a href="#class">Cursos</a>
+            <a href="#">Inscripción</a>
+            <a href="#">Contactanos</a>
+          </nav>
+        </form>
     </header>
     <main >
         <section id="hero">
@@ -33,77 +48,76 @@
             </picture>
           </section>
     </main>
-    <section id="class">
-        <h2>Clases</h2>
-        <p>¡Empezá cuando quieras!</p>
-        <ul>
-          <li>
-            <a href="#">
-                <picture><img src="assets/IMG/Individual.webp" alt="" /></picture>
-                <h3>Individuales</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <picture><img src="assets/IMG/college class-bro.webp" alt="" /></picture>
-                <h3>Grupales</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <picture><img src="assets/IMG/International.webp" alt="" /></picture>
-                <h3>Examenes Internacionales</h3>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <picture><img src="assets/IMG/conversacional.webp" alt="" /></picture>
-                <h3>Conversacionales</h3>
-            </a>
-          </li>
-          <li>
-            <a href="">
-                <picture><img src="assets/IMG/teaching.webp" alt="" /></picture>
-                <h3>Inglés Profesional</h3>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section id="about">
-        <header><h2>Nuestra pasión es enseñar y lograr
-          que cada alumno disfrute en el proceso.</h2></header>
+    <section id="info">
+      <h2>¿Cómo trabajamos?</h2>
+      <ul>
+        <li>
+          <picture><img src="assets/IMG/Schedule-amico.webp" alt=""></picture>
+          <h3>Flexibilidad</h3>
+          <p>Nos adaptamos a tus horarios y trabajamos de 8 a 20 hs de Lunes a Viernes</p>
+        </li>
+        <li>
+          <picture><img src="assets/IMG/Group Chat-rafiki.webp" alt=""></picture>
+          <h3>Conversación</h3>
+          <p>Ponemos el foco en conversacion y motivamos a nuestros alumnos a exponerse al idioma de la manera mas orgánica posible.</p>
+        </li>
+        <li>
+          <picture><img src="assets/IMG/Interview-pana.webp" alt=""></picture>
+          <h3>Entrevista Inicial</h3>
+          <p>Queremos conocer a nuestros alumnos y sus objetivos para poder encontrar el metodo ideal. Además hacemos un test de nivel para saber desde donde arrancamos.</p>
+        </li>
+        <li>
+          <picture><img src="assets/IMG/Education-rafiki.webp" alt=""></picture>
+          <h3>Material</h3>
+          <p>Nuestros materiales se adaptan a nuestros alumnos y sus intereses. El inglés es dinámico y por eso utilizamos recursos actuales.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <header><h2>Nuestra pasión es enseñar y lograr
+        que cada alumno disfrute en el proceso.</h2></header>
         <article>
           <p>
             En nuestro enfoque educativo, aplicamos una metodología comunicativa e interactiva. Nos centramos en situaciones reales de comunicación, fomentando la participación activa de los estudiantes. Utilizamos materiales auténticos, como videos, música o artículos, adaptados tanto a los intereses individuales como a los del grupo, para lograr un aprendizaje significativo y relevante.
           </p>
           <a href="#">Mas de Nosotros</a>
         </article>
-
       </section>
-      <section id="info">
-        <h2>¿Cómo trabajamos?</h2>
-        <ul>
-          <li>
-            <picture><img src="assets/IMG/Schedule-amico.webp" alt=""></picture>
-            <h3>Flexibilidad</h3>
-            <p>Nos adaptamos a tus horarios y trabajamos de 8 a 20 hs de Lunes a Viernes</p>
-          </li>
-          <li>
-            <picture><img src="assets/IMG/Group Chat-rafiki.webp" alt=""></picture>
-            <h3>Conversación</h3>
-            <p>Ponemos el foco en conversacion y motivamos a nuestros alumnos a exponerse al idioma de la manera mas orgánica posible.</p>
-          </li>
-          <li>
-            <picture><img src="assets/IMG/Interview-pana.webp" alt=""></picture>
-            <h3>Entrevista Inicial</h3>
-            <p>Queremos conocer a nuestros alumnos y sus objetivos para poder encontrar el metodo ideal. Además hacemos un test de nivel para saber desde donde arrancamos.</p>
-          </li>
-          <li>
-            <picture><img src="assets/IMG/Education-rafiki.webp" alt=""></picture>
-            <h3>Material</h3>
-            <p>Nuestros materiales se adaptan a nuestros alumnos y sus intereses. El inglés es dinámico y por eso utilizamos recursos actuales.</p>
-          </li>
-        </ul>
-      </section>
-</body>
+      <section id="class">
+          <h2>Clases</h2>
+          <p>¡Empezá cuando quieras!</p>
+          <ul>
+            <li>
+              <a href="#">
+                  <picture><img src="assets/IMG/Individual.webp" alt="" /></picture>
+                  <h3>Individuales</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <picture><img src="assets/IMG/college class-bro.webp" alt="" /></picture>
+                  <h3>Grupales</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <picture><img src="assets/IMG/International.webp" alt="" /></picture>
+                  <h3>Examenes Internacionales</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <picture><img src="assets/IMG/conversacional.webp" alt="" /></picture>
+                  <h3>Conversacionales</h3>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                  <picture><img src="assets/IMG/teaching.webp" alt="" /></picture>
+                  <h3>Inglés Profesional</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+    </body>
 </html>
