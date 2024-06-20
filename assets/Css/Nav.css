@@ -135,7 +135,7 @@
     #mobile_nav nav {
         position: absolute;
         right: 1rem;
-        top: 4rem;
+        top: 3.5rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
