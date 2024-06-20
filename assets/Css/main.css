@@ -131,6 +131,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  #navbar {
+    height: 10vh;
+    width: 100vw;
+  }
+
   #desktop_nav {
     display: none;
   }
@@ -147,6 +152,7 @@ body {
 
   #mobile_nav label {
     display: flex;
+    width: 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 0.25rem;
@@ -165,7 +171,7 @@ body {
   #mobile_nav nav {
     position: absolute;
     right: 1rem;
-    top: 2.5rem;
+    top: 4rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -173,11 +179,12 @@ body {
     background-image: linear-gradient(to left,
         var(--bg-nav),
         var(--bg-banner));
-    width: 200px;
+    width: 50vw;
     animation: slideOut 500ms ease-in-out 1 forwards;
   }
 
   #mobile_nav nav a {
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
     padding: 1rem 0.rem;
