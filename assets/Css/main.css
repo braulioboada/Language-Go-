@@ -264,28 +264,38 @@ main {
   }
 }
 
+@media (max-width: 640px) {
+  #about {
+    padding: 0.5rem;
+
+    & p {
+      text-align: center;
+    }
+  }
+}
+
 #class {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem 0;
   max-width: 90vw;
-}
 
-#class h2 {
-  font-weight: 700;
-  font-family: 'Oswald', sans-serif;
-  color: var(--text-w);
-  text-align: center;
-  font-size: 4rem;
-}
+  & h2 {
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-w);
+    text-align: center;
+    font-size: 4rem;
+  }
 
-#class p {
-  font-weight: 600;
-  font-family: 'roboto', sans-serif;
-  color: var(--text-3);
-  text-align: center;
-  font-size: 2.5rem;
+  & p {
+    font-weight: 600;
+    font-family: 'roboto', sans-serif;
+    color: var(--text-3);
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 #Cards {
@@ -297,17 +307,17 @@ main {
   gap: 2rem;
   width: 100%;
 
-}
+  & li {
+    background-color: var(--bg-card);
+    color: var(--text-white);
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: calc(50% - 2rem);
+  }
 
-#Cards li {
-  background-color: var(--bg-card);
-  color: var(--text-white);
-  display: flex;
-  gap: 1rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  width: 100%;
-  max-width: calc(50% - 2rem);
 }
 
 #Cards .card_info {
@@ -315,37 +325,36 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
-}
 
-#Cards .card_info h3 {
-  font-weight: 700;
-  color: var(--text-shadow);
-  font-size: 2rem;
+  & h3 {
+    font-weight: 700;
+    color: var(--text-shadow);
+    font-size: 2rem;
+  }
 
-}
+  & p {
+    color: var(--text-shadow);
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0.2rem;
 
-#Cards .card_info p {
-  color: var(--text-shadow);
-  text-align: justify;
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding: 0.2rem;
-}
+    & span {
+      font-weight: bold;
+    }
+  }
 
-#Cards .card_info p span {
-  font-weight: bold;
-}
-
-#Cards .card_info a {
-  background-color: var(--bg-btn);
-  color: var(--text-white);
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  align-self: flex-end;
+  & a {
+    background-color: var(--bg-btn);
+    color: var(--text-white);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: flex-end;
+  }
 }
 
 @media (max-width: 900px) {
@@ -356,5 +365,11 @@ main {
     & li {
       max-width: none;
     }
+  }
+}
+
+@media (max-width: 640px) {
+  #Cards li {
+    flex-direction: column;
   }
 }
