@@ -332,15 +332,15 @@ main {
   }
 
   & p {
-    color: var(--text-shadow);
-    text-align: justify;
+    color: var(--bg-btn);
+    text-align: start;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 600;
     padding: 0.2rem;
   }
 
   & span {
-    font-weight: bold;
+    font-weight: 900;
   }
 
   & a {
@@ -383,9 +383,24 @@ main {
   width: 100%;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2.5rem;
   gap: 1rem;
+
+  & h2 {
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: var(--text-shadow);
+    font-size: 2.5rem;
+    color: var(--bg-primary);
+    display: grid;
+    place-items: center;
+    writing-mode: vertical-lr;
+    margin: 0 3rem 0 0;
+    transform: rotate(-180deg);
+  }
+
 
   & form {
     border-radius: 1.5rem;
@@ -396,78 +411,75 @@ main {
     max-width: calc(50% - 3rem);
     justify-content: center;
     align-items: center;
-  }
 
-  & fieldset {
-    font-weight: 900;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    color: var(--text-shadow);
-    font-size: 2.5rem;
-  }
+    & .formulario {
+      font-weight: 500;
+      font-family: 'roboto', sans-serif;
+      color: var(--text-3);
+      text-align: justify;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      gap: 1rem;
+      width: 100%;
+      max-width: calc(50% - 3rem);
+      margin: 1rem;
+    }
 
-  & .formulario {
-    font-weight: 500;
-    font-family: 'roboto', sans-serif;
-    color: var(--text-3);
-    text-align: justify;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    gap: 1rem;
-    width: 100%;
-    max-width: calc(50% - 3rem);
-    margin: 1rem;
-  }
+    & textarea {
+      font-weight: 500;
+      font-family: 'roboto', sans-serif;
+      color: var(--text-3);
+      text-align: justify;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      gap: 1rem;
+      width: 100%;
+      max-width: calc(100% - 3.5rem);
+      margin: 1rem;
+      resize: none;
+    }
 
-  & textarea {
-    font-weight: 500;
-    font-family: 'roboto', sans-serif;
-    color: var(--text-3);
-    text-align: justify;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    gap: 1rem;
-    width: 100%;
-    max-width: calc(100% - 3.5rem);
-    margin: 1rem;
-    resize: none;
-  }
+    & legend {
+      font-weight: 700;
+      font-family: 'roboto', sans-serif;
+      font-size: 1.3rem;
+      padding: 1rem;
+      gap: 1rem;
+    }
 
-  & legend {
-    font-weight: 700;
-    font-family: 'roboto', sans-serif;
-    font-size: 1.3rem;
-    padding: 1rem;
-    gap: 1rem;
-  }
+    & label {
+      font-weight: 500;
+      font-family: 'roboto', sans-serif;
+      font-size: 1rem;
+      padding: 1rem 0 0 1rem;
+      gap: 1rem;
+    }
 
-  & label {
-    font-weight: 500;
-    font-family: 'roboto', sans-serif;
-    font-size: 1rem;
-    padding: 1rem 0 0 1rem;
-    gap: 1rem;
-  }
-
-  & button {
-    background-color: var(--bg-btn);
-    color: var(--text-white);
-    display: flex;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-    margin: 1rem auto;
+    & button {
+      background-color: var(--bg-btn);
+      color: var(--text-white);
+      display: flex;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      margin: 1rem auto;
+    }
   }
 }
 
 @media (max-width: 1024px) {
   #contact {
     padding: 0.5rem;
+
+    & h2 {
+      transform: none;
+      writing-mode: horizontal-tb;
+    }
 
     & form {
       max-width: none;
