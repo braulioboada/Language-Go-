@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-primary: #37a3a5;
+    --secondary: #005AA7;
+    --bg-btn: #225779;
+    --bg-banner: #69ecec;
+    --bg-sect: #69ecec5d;
+    --bg-card: #70C2B0;
+    --bg-nav: #69ececb3;
+    --box-shadow-dark: 0 0 .5rem 0.25rem #ffffff66;
+    --box-shadow-white: 0.2rem 0.2rem #f0ebeb;
+    /*Texto*/
+    --text-gray: #7a7b7c;
+    --text-dark: #212121;
+    --text-white: #f3f4f6;
+    --text-1: #43C6AC;
+    --text-2: #191654;
+    --text-3: #4d4d75;
+
+    --title: 'Oswald', sans-serif;
+    --text: 'Roboto', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+body {
+    font-family: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
